@@ -33,4 +33,4 @@ const url = "https://hitesh.com/hitesh%20choudary"
 console.log(url.replace('%20' , '-'))
 
 console.log(url.includes('kdjfhgsj'));
-console.log(gameName.split('-'))
+console.log(gameName.split('-')) 
