@@ -1,0 +1,15 @@
+             window - > document ----
+                                    |
+                                    |
+                                    |
+                    head        <___|__>  body-
+                                            |  
+                                            |
+                                            |
+                                            |
+                                            |
+                                           \ /
+                                           div
+                                            |
+                                            |
+                  attribute<------h1<-------|----->p

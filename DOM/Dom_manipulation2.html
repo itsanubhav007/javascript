@@ -23,7 +23,17 @@
  }
  addLanguage("python")
  addLanguage("typescript")
- 
+
+ // above method is not as much as optomize
+
+function addOptilanguage(langName)
+{
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode('langName'));
+    document.querySelector('.language').appendChild(li)
+}
+addOptiLanguage('golang');
+
 
 
 
