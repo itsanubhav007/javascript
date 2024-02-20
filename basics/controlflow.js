@@ -41,7 +41,7 @@ if(Object.keys(emptyObj).length === 0)
  
 
 
- var1 = undefined?? 15;
+ val1 = undefined?? 15;
  console.log(val1);
 
  val1 = null??null??20
