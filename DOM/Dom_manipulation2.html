@@ -8,14 +8,24 @@
 <body>
     <ul class = "language">
          <li>javascript</li>
-         <li>c++</li>
-         <li>c</li> 
+         
     </ul>
 
 
 
 </body>
-<style>
-    
-</style>
+<script>
+ function addLanguage(langname)
+ {
+    const li = document.createElement('li');
+    li.innerHTML = `${langname}`
+    document.querySelector('.language').appendChild(li)
+ }
+ addLanguage("python")
+ addLanguage("typescript")
+ 
+
+
+
+</script>
 </html>
