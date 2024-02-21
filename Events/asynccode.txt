@@ -1,0 +1,28 @@
+javascript - > synchronous
+           ->  single threaded
+
+
+->execution context
+     |->execute one line of code at a time
+     |
+     |->console.log ->1
+     |
+     |->console.log ->2
+     |
+     |   ________________              _____________
+     |   |__call stack___|            |_memory heap_|
+     |
+
+
+     Blocking Code vs Non Blocking Code
+       |                          |
+       \/                        \/   
+    Block the flow of program    do not block execution
+       |                               |
+       \/                             \/
+       Read file Sync              Read file Async
+
+
+
+
+       
