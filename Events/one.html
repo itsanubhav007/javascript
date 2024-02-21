@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html elements</title>
+</head>
+<body>
+    <div>
+    <ul id = "images">
+       <li>
+        <img src="" alt="">
+       </li>
+
+    </ul>
+    </div>
+
+  <ul>
+    <li> javascript ke andar jitne bhi events hote hai wo sequentialy hi run hote hai</li>
+    <li>events kissi na kisis activity pe trigger hoga</li>
+    <li>Propogation : false : bubbling up bubble niche se upar jata hai.
+        true : capturing up   - upar se niche jata hai </li>  
+    <li>    e.stopPropogation() // event bubble nhi hoga;</li>
+    <li></li> 
+     </ul>
+
+
+
+</body>
+<script>
+  //document.getElementById('owl').onclick = function(){
+  //  alert("owl cliked");
+  //}
+  ///+++++++search about+++++++///
+  // a - type , timestamp ,defaultPrevented
+  // target , toElement , srcElement , currentTarget
+  //clientX , clientY ,scrrenX , screenY
+  // altkey ,ctrlkey ,shiftkey ,keyCode
+  
+
+  //attachEvent()
+  //jQuery - oneventListner
+
+  document.getElementById('owl').addEventListner('click' , function(e){
+    console.log(e);// pointer
+    //button 
+    e.stopPropogation() // event bubble nhi hoga;
+  } ,false)
+  
+
+  document.getElementById('google').addEventListner('click' , function(e){
+    console.log('google clicked');
+    e.preventDefault()
+  } ,false)
+
+
+  document.querySelector('#images').addEventListner('click' , function(e){
+    console.log(e.target.parentNode);
+    let ramoveIt = e.target.parentNode;
+    //removeIt.remove();
+     removeIt.parentNode.removeChild(removeIt)  
+  } ,false)
+
+
+
+
+
+
+</script>
+
+</html>
