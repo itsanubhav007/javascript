@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <p>0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete.</p>  
+ </head>
+ </body>
+ <script> 
+ const requestUrl = 'https://api.github.com/users/itsanubhav007'
+ const xhr =   new XMLHttpRequest();
+ xhr.open('Get' , requestUrl );//jab state change toh batata hai
+ xhr.onreadystatechange  = function (){
+    console.log(xhr.readyState);
+ //jab state change toh batata hai
+ console.log(xhr.readyState);
+  if(xhr.readyState === 4)
+  {
+    const data = JSON.parse(this.responseText);//response jab ata hai tab string me ata hai
+    console.log(data.followers_url);
+  }
+}
+// console write to file is available and inside v8 inside d8 engine we can find it.
+
+
+ //console.log('Here');
+ xhr.send();
+</script> 
+</body>
+ </html>
